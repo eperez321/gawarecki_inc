@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Gawarecki Inc</title>
+      
+    <!-- META DATA -->
+      <meta charset="UTF-8">
+      <meta name="description" content="ecommerce inventory tracker">
+      <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+      <meta name="author" content="Edwin Perez">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <!-- CSS -->      
+      <link rel="stylesheet" href="css/dashboard.css">
+        
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>    
+        
+      <script src="script.js"></script>
+                     
+    </head>
+    <body>
+ 
+      <div class="sidenav">
+        <div id="logoContainer">
+          <a href="index.html">
+          <img src="images/gIncLogo.png" alt="Gawarecki Inc Logo">
+          </a>
+        </div>
+        <a href="addItem.html" class="navbtn">Add Item</a>
+        <a href="history.html" class="navbtn">History</a>
+        <a href="goals.html" class="navbtn">Goals</a>
+        <a href="calendar.html" class="navbtn">Calendar</a>
+          
+        <footer>Gawarecki Inc. &copy 2018</footer>
+          
+      </div>
+        
+<!-- CONTAINER FOR RIGHT SIDE OF THE SCREEN --> 
+      <div id="dashboard">
+          
+<!-- CONTAINER FOR GRAPH/GOALS DISPLAYS -->        
+        <div class="row">
+ 
+<!-- DISPLAY GRAPH/STATISTICS -->      
+            <div class="column">
+                <p id="chartContainer">Charts will display here</p>
+            </div>
+ 
+<!-- DISPLAY GOALS -->      
+            <div class="column">         
+                <p id="goalsContainer">Goals will be displayed here</p>
+            </div>
+          
+        </div>
+      
+<!-- DISPLAY TABLE -->
+        <div id="tableDisplay">
+            <table>
+                <tr>
+                    <th>Del</th> <!-- WILL BE A BUTTON THAT POPULATES A CONFIRMATION ALERT BEFORE DELETING THE FILE FROM THE DATABASE -->
+                    <th>Item Image</th> <!-- WILL DISPLAY A THUMBNAIL OF ITEM -->
+                    <th>Date Posted</th> <!-- CURRENTLY INPUT BY USER DIRECTLY ON addItem.html -->
+                    <th>Listing Price</th> <!-- CURRENTLY INPUT BY USER DIRECTLY ON addItem.html -->
+                    <th>Potential Profit</th> <!-- WILL DISPLAY THE LOW/HIGH PROFIT MARGIN POTENTIAL -->
+                    <th>Size</th> <!-- NEED TO MAKE NOT REQUIRED ONLY APPLIES TO SNEAKERS -->
+                    <th>Sold</th> <!-- WILL BE A BUTTON THAT REDIRECTS TO soldItem.html  AND LOADS CURRENT RECORD-->
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$250.00</td>
+                    <td>$100/$150</td>
+                    <td>9.5</td>
+                    <td><a href="soldItem.html">&#9745</a></td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$160.00</td>
+                    <td>$100/$150</td>
+                    <td>5.5</td>
+                    <td>&#9745</td>
+                </tr>
+                                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$325.00</td>
+                    <td>$100/$150</td>
+                    <td>10</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$175.00</td>
+                    <td>$100/$150</td>
+                    <td>11.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$225.00</td>
+                    <td>$100/$150</td>
+                    <td>L</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$365.00</td>
+                    <td>$100/$150</td>
+                    <td>9.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$300.00</td>
+                    <td>$100/$150</td>
+                    <td>M</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$295.00</td>
+                    <td>$100/$150</td>
+                    <td>L</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$200.00</td>
+                    <td>$100/$150</td>
+                    <td>13</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$157.00</td>
+                    <td>$100/$150</td>
+                    <td>11.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$290.00</td>
+                    <td>$100/$150</td>
+                    <td>10</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$310.00</td>
+                    <td>$100/$150</td>
+                    <td>L</td>
+                    <td>&#9745</td>
+                    <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$250.00</td>
+                    <td>$100/$150</td>
+                    <td>9.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$160.00</td>
+                    <td>$100/$150</td>
+                    <td>5.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$325.00</td>
+                    <td>$100/$150</td>
+                    <td>10</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$250.00</td>
+                    <td>$100/$150</td>
+                    <td>9.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$160.00</td>
+                    <td>$100/$150</td>
+                    <td>5.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$325.00</td>
+                    <td>$100/$150</td>
+                    <td>10</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$250.00</td>
+                    <td>$100/$150</td>
+                    <td>9.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$160.00</td>
+                    <td>$100/$150</td>
+                    <td>5.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$325.00</td>
+                    <td>$100/$150</td>
+                    <td>10</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$175.00</td>
+                    <td>$100/$150</td>
+                    <td>11.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$225.00</td>
+                    <td>$100/$150</td>
+                    <td>L</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$365.00</td>
+                    <td>$100/$150</td>
+                    <td>9.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$300.00</td>
+                    <td>$100/$150</td>
+                    <td>M</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$295.00</td>
+                    <td>$100/$150</td>
+                    <td>L</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$200.00</td>
+                    <td>$100/$150</td>
+                    <td>13</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$157.00</td>
+                    <td>$100/$150</td>
+                    <td>11.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$290.00</td>
+                    <td>$100/$150</td>
+                    <td>10</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$310.00</td>
+                    <td>$100/$150</td>
+                    <td>L</td>
+                    <td>&#9745</td>
+                    <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$250.00</td>
+                    <td>$100/$150</td>
+                    <td>9.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$160.00</td>
+                    <td>$100/$150</td>
+                    <td>5.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$325.00</td>
+                    <td>$100/$150</td>
+                    <td>10</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$250.00</td>
+                    <td>$100/$150</td>
+                    <td>9.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$160.00</td>
+                    <td>$100/$150</td>
+                    <td>5.5</td>
+                    <td>&#9745</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="#" alt="Item Picture"></td>
+                    <td>09/04/1987</td>
+                    <td>$325.00</td>
+                    <td>$100/$150</td>
+                    <td>10</td>
+                    <td>&#9745</td>
+                </tr>
+                
+            </table>
+        </div>
+          
+      </div>
+      
+    </body>
+  </html>

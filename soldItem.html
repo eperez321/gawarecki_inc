@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>TEMPLATE PAGE</title>
+      
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="css/soldItem.css">
+        
+      <script src="script.js"></script>
+      
+    </head>
+    <body>
+      
+      <div class="sidenav">
+        
+        <div id="navbtns">
+          
+          <a href="index.php">
+          <img src="images/gIncLogo.png" alt="Gawarecki Inc Logo" id="logo"><div id="companyname">Gawarecki Inc.</div>
+          </a>
+          <a href="addItem.html">Add Item<br>
+            <p>Add Sneaker, Add Hat</p>
+          </a>
+          <a href="history.html">History<br>
+            <p>Search, Taxes, Revise</p>
+          </a>
+          <a href="goals.html">Goals<br>
+            <p>Set Goal, Change Display</p>
+          </a>
+          <a href="calendar.html">Calendar<br>
+            <p>View Tasks, Add Task, Update Task</p>
+          </a>
+            
+          <footer>Gawarecki Inc.	&#8482 2018 &#169</footer>
+          
+        </div>
+        <!-- END NAV BTNS-->
+        
+      </div>
+      <!-- END OF SIDE NAV -->
+      
+      <div class="dashdisplay">
+        
+        <div class="topdash">
+          
+          <!-- ADD HEADER INFO TO THE BLUE TOP OF PAGE -->
+          
+        </div>
+		<div class="bottomdash">
+		
+		  <div class="row">
+      
+          <!-- DISPLAY ITEM PICTURE -->
+          <div id="itemPic">
+            <img src="#" alt="Item Picture"><br><br>
+          </div>
+          
+          <div class="formcontainer">
+
+            <p id="platformPosted">Platform(s) Posted:</p>
+
+            <!-- USER INPUT SOLD ITEM DATA -->
+            <form name="myForm" action="/action_page.php" method="get">
+
+                <div class="row">
+                    
+                    <div class="pColumn">
+                        <div class="btn-group">
+                            <button>eBay</button>
+                            <button>StockX</button>
+                            <button>Amazon</button>
+                            <button>GOAT</button>
+                            <button>FaceBook</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        Date Sold:<br>
+                        <input type="date" name="dsold">
+                    </div>
+                    <div class="column">
+                        Price Sold:<br>
+                        <input type="number" name="psold" placeholder="$0.00" min="1" max="9999" step="any">
+                    </div>
+                    <div class="column">
+                        Payment Method:<br>
+                        <input list="paymentMethod" name="paymentMethod" placeholder="Select Method">
+                        <datalist id="paymentMethod">
+                            <option id="paypal">PayPal</option>
+                            <option id="creditCard">Credit Card</option>
+                            <option id="venmo">Venmo</option>
+                            <option id="wireTransfer">Wire Transfer</option>
+                        </datalist>
+                    </div>
+                    <div class="column">
+                        Transaction ID:<br>
+                        <input type="text" name="transid">
+                    </div>
+                    <div class="column">
+                        Shipping Method:<br>
+                        <input list="shippingMethod" name="shippingMethod" placeholder="Select Method">
+                        <datalist id="shippingMethod">
+                            <option id="usps">USPS</option>
+                            <option id="ups">UPS</option>
+                            <option id="fedex">FedEx</option>
+                        </datalist>
+                    </div>
+                    <div class="column">
+                        Tracking Number:<br>
+                        <input type="text" name="trackingNum">
+                    </div>
+                </div><br>
+
+                <div id="submitButton">
+                <input type="button" onclick="formSubmit()" value="SUBMIT">
+                </div>
+
+          </form>
+
+              <!-- ENDS FORMCONTAINER DIV -->
+        </div>
+        
+          <!-- ENDS DASHBOARD DIV -->
+        </div>
+            
+      </div>
+          
+    </div>
+        
+    </body>
+  </html>

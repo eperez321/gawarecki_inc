@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Dashboard</title>
+      
+<!-- META DATA -->
+      <meta charset="UTF-8">
+      <meta name="description" content="ecommerce inventory tracker">
+      <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+      <meta name="author" content="Edwin Perez">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+<!-- CSS -->      
+      <link rel="stylesheet" href="css/dashboard.css">
+      
+    </head>
+    <body>
+ 
+      <div class="sidenav">
+        <a href="index.html">
+          <img src="logo.png" alt="Gawarecki Inc Logo">
+        </a>
+        <a href="#">Add Item</a>
+        <a href="#">History</a>
+        <a href="#">Goals</a>
+        <a href="#">Calendar</a>
+        <br><br>
+          
+        <footer>Gawarecki Inc. &copy 2018</footer>
+          
+      </div>
+        
+      
+<!-- TOP DASH DISPLAY -->        
+      <div class="row">
+ 
+    <!-- DISPLAY GRAPH/STATISTICS -->      
+        <div class="column1">
+          <div id="chartContainer">Profit charts will display here</div> <!-- DISPLAY WILL BE BASED ON TIME PARAMETER CHOSEN IN .topnav  -->
+        </div>
+ 
+    <!-- DISPLAY GOALS -->      
+        <div class="column2">         
+          <div id="goalsContainer">Goals will be displayed here</div> <!-- DISPLAY WILL BE BASED ON TIME PARAMETER CHOSEN IN .topnav -->
+        </div>
+          
+      </div><br><br>
+      
+<!-- DISPLAY TABLE -->
+      <div id="dashDisplay">
+        <table>
+          <tr>
+            <th>Del</th> <!-- WILL BE A BUTTON THAT POPULATES A CONFIRMATION ALERT BEFORE DELETING THE FILE FROM THE DATABASE -->
+            <th>Item Image</th> <!-- WILL DISPLAY A THUMBNAIL OF ITEM -->
+            <th>Date Posted</th> <!-- CURRENTLY INPUT BY USER DIRECTLY ON addItem.html -->
+            <th>Listing Price</th> <!-- CURRENTLY INPUT BY USER DIRECTLY ON addItem.html -->
+            <th>Potential Profit</th> <!-- WILL DISPLAY THE LOW/HIGH PROFIT MARGIN POTENTIAL -->
+            <th>Size</th> <!-- NEED TO MAKE NOT REQUIRED ONLY APPLIES TO SNEAKERS -->
+            <th>Sold</th> <!-- WILL BE A BUTTON THAT REDIRECTS TO soldItem.html -->
+          </tr>
+        </table>
+      </div><br>
+      
+    </body>
+  </html>
